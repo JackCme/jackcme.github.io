@@ -1,39 +1,39 @@
 # Site
-repository: sproogen/resume-theme
+repository: jackCme/jackcme.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: 최원준 Jack Choi
+title: 소프트웨어 백엔드 엔지니어
+email: cochonjun@gmail.com
+# website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+# twitter_username: facespics
+github_username:  jackCme
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: jameswgrant
-linkedin_username: jameswgrant
+# instagram_username: jameswgrant
+# linkedin_username: jameswgrant
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -45,76 +45,130 @@ additional_links:
 # google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
-about_profile_image: images/profile.jpg
+about_title: About Me
+about_profile_image: images/nyancat.png
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  6년 차 개발자로 중소기업과 스타트업에서 웹과 앱 서비스를 개발/배포/운영하였습니다.<br/>
+  주로 백엔드 웹 개발을 담당했으며 소규모 팀에서는 <mark>Scrum master</mark> 의 역할을 맡아야 했기에 팀의 역량을 위해 앱과 프론트에 대한 지식도 보유중입니다.<br/>
+  업무와 개발효율 극대화를 위해 CI/CD 구축, 배포빌드 자동화 설정을 직접 수행한 경험이 많습니다.<br/>
+  레거시 개선과 성능 개선을 중점으로 유저에게 최상의 경험을 위해 항상 고민합니다.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
-
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
+      # 유스비
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: 유스비(useB.)
+        link: useb.co.kr
+        sub_title: 소프트웨어 엔지니어
+        caption: 2022.09 ~ 현재
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+          금융사, 핀테크, 가상자산 사업자를 위한 레그테크<b>(RegTech)</b> <u>비대면 본인인증 통합 솔류션</u> 서비스 스타트업
+        description: |
+          * 신분증 API 성능개선 (⬆️10배)
+          * API 서비스 헬스체크 알람 도입
+          * API 서비스 [Javascript SDK](https://www.npmjs.com/package/useb-api-sdk-nodejs) / [Golang SDK](https://pkg.go.dev/github.com/useb-inc/useb-api-sdk-go) 개발
+          * 안면인증/신분증OCR SDK 연동샘플 개발
+          * 자금세탁방지 WLF API 서비스 연동개발
+          * 백오피스 운영업무 처리개선
+          * 배포 Pipeline 구축 및 자동화
+      
+      # 플레이오토
+      - layout: left
+        title: 더기프팅컴퍼니
+        link: inthewear.co.kr
+        sub_title: 소프트웨어 엔지니어
+        caption: 2020.08 ~ 2022.05
+        quote: >
+          구독형 여성속옷 e-Commerce 플랫폼 스타트업 <b>"월간가슴"</b>
+        description: |
+          * 결제 서비스 마이그레이션 & 연동개발 & 안정성 개선
+          * 서비스 홈페이지 레거시 마이그레이션
+          * 고객용 마이페이지 서비스 리뉴얼
+          * MSA 백엔드 구축
+          * 백오피스 레거시 개선 & 리뉴얼
+      
+      # 더기프팅컴퍼니
+      - layout: left
+        title: 플레이오토
+        link: plto.com
+        sub_title: 소프트웨어 엔지니어
+        caption: 2018.11 ~ 2020.08
+        quote: >
+          온라인 셀러전용 e-Commerce <u>쇼핑몰 통합관리 솔류션</u> 서비스
+        description: |
+          * 커머스 사이트 연동엔진 백엔드 개발 & 유지보수
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+      # 티에프컴퍼니
+      - layout: left
+        title: 티에프컴퍼니
+        sub_title: 소프트웨어 엔지니어
+        caption: 2017.09 ~ 2018.11
+        description: |
+          * 사내 서버 & 도메인 관리
+          * 모바일 화상채팅 앱/백엔드 개발 & 유지보수
+
+  - title: Tech Skills
+    layout: list
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+        title: Backend
+        description: |
+          * Typescript, Java, Kotlin, PHP, .NET C#, Python, Golang
+          * NodeJS, NestJS, Spring Boot, Codeigniter, FastAPI
+          * TypeORM, JPA, Querydsl, Hibernate
+          * JUnit, Mockito
+          * IntelliJ, Visual Studio Code
+          * Git, Github
+          * BeatifulSoup, Chromedriver, Web scrapping
+      
+      - layout: left
+        title: DevOps
+        description: |
+          * MySQL, MariaDB, PostgreSQL, MongoDB, Redis
+          * Docker, Jenkins, Github actions
+          * NCP Financial, AWS SQS, Elasticache, RDS, S3, EC2
+          * Nginx
+          * Linux Centos, Ubuntu
+          * Slack apps
+      
+      - layout: left
+        title: Frontend & App
+        description: |
+          * ES6, Typescript, Java, Kotlin, Swift
+          * ReactJS, NextJS, Android, iOS
+          * HTML, CSS, SASS
+          * Npm
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 한동대학교
+        sub_title: Handong Global University
+        caption: 2010 - 2018
+        description: |
+          * 컴퓨터공학/전자공학 복수전공 학사
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+  - title: Other Experience
+    layout: list
+    content:
+      - layout: left
+        title: 오픈소스
+        description: |
+          * [inko.py](https://github.com/JackCme/inko.py): 영타<->한타 변환 오픈소스 파이썬 라이브러리 
+      
+      - layout: left
+        title: 자격증
+        description: |
+          * 정보처리기사, 정보처리기능사
+          * 영어 TOEFL 101, TOEIC 960
+          * 불어 DELF B2 Level
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
 # Build settings
 remote_theme: sproogen/resume-theme
